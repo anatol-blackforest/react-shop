@@ -1,0 +1,103 @@
+body
+  background: antiquewhite
+.App
+  max-width: 800px
+  margin: 0 auto
+  border: 1px solid pink
+.app-nav
+  margin: 20px
+  padding: 10px
+  border-bottom: 2px solid #508fca
+  ul
+    padding: 0
+    margin: 0
+    display: flex
+    list-style-type: none
+    li.app-nav-item
+      list-style: none
+      margin-right: 30px
+      font-size: 24px
+      border-bottom: 4px solid transparent
+      a
+        text-decoration: none
+        cursor: pointer
+    li.app-nav-item.selected
+      font-weight: bold
+      border-bottom: 3px solid orange
+    li.cartItems-icon
+      margin-left: 32vw
+      a
+        color: gray
+        font-weight: bold
+.app-content
+  margin: 0 20px
+ul.itemPage-items
+  overflow: hidden;
+  list-style-type: none
+  li.total-price
+    font-weight: bold
+    text-align: right
+    padding: 10px
+.shopping-items-length
+  font-size: small
+  border: 1px solid black
+  background: red
+  border-radius: 100%
+  padding: 4px 8px
+  color: white
+  position: relative
+  bottom: 16px
+
+.hide
+  display: none
+.item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid gray
+  padding: 10px
+.item-image
+  width: 64px
+  height: 64px
+  border: 1px solid gray
+  margin-right: 10px
+.item-title
+  font-weight: bold
+  margin: 0.4em 0
+.item-price
+  font-size: 19px
+  color: #555
+.item-addToCart
+  margin-top: 5px
+  font-size: 14px
+  border: 2px solid #FFAA3F
+  background: #fff
+  border-radius: 3px
+  cursor: pointer
+  &:hover
+    background: #FFDDB2
+  &:active
+    background: #ED8400
+    color: #fff
+    //outline: none
+  &:focus
+    outline: none
+.item-left
+  display: flex
+.item-right
+
+// buy button
+.buy
+  padding: 10px
+  background: #ED8400
+  color: #fff
+  border-radius: 4px
+  width: 120px
+  font-size: 22px
+  float: right
+.CartPage-empty
+  text-align: center
+  line-height: 2em
+  font-size: 20px
+  margin: 4em 1em
+  color: #555
